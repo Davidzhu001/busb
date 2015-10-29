@@ -29,6 +29,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Unicorn as the app server
 # gem 'unicorn'
 gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
+gem 'devise'
+gem 'devise-bootstrap-views'
+gem "slim-rails"
+gem 'html2slim'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
