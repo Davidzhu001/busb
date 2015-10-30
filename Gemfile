@@ -33,6 +33,8 @@ gem 'devise'
 gem 'devise-bootstrap-views'
 gem "slim-rails"
 gem 'html2slim'
+gem 'simple_form'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
