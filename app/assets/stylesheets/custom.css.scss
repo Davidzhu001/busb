@@ -36,12 +36,10 @@
   }
 }
 body {
-  position: fixed;
+  position: relative;
   font-family: Helvetica;
   background: url('indexBg.jpg') top center no-repeat;
   background-size: cover;
-  width: 1200px;
-  height: 800px;
   }
 .header {
   padding: 20px 0;
