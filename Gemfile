@@ -34,6 +34,7 @@ gem 'devise-bootstrap-views'
 gem "slim-rails"
 gem 'html2slim'
 gem 'simple_form'
+gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 
 
 # Use Capistrano for deployment

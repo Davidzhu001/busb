@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/doabit/semantic-ui-sass.git
+  revision: 0c6474f98bfdd82b764b8289df0108033f01b7f7
+  specs:
+    semantic-ui-sass (2.1.4.0)
+      sass (>= 3.2)
+
+GIT
   remote: https://github.com/twbs/bootstrap-rubygem
   revision: 6014a8dd373d12da2d1a2553d81a33a547e4f62f
   specs:
@@ -191,6 +198,7 @@ DEPENDENCIES
   rails (= 4.2.4)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
+  semantic-ui-sass!
   simple_form
   slim-rails
   spring

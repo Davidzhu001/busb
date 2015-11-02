@@ -1,8 +1,30 @@
-header.header
-  h1
-    = link_to 'Home', root_path, class: "btn btn-warning text-white"
-  ul.nav
-    li
-      = link_to 'Sign Up', new_user_registration_path
-    li
-      = link_to 'Sign In', new_user_session_path
+-if user_signed_in?
+  nav.pull-right
+    ul
+      li
+        a href="home.html"  Home
+      li
+        a href="products.html"
+          | Products
+          span.caret
+        div
+          ul
+            li
+              a href="products.html#chair"  Chair
+            li
+              a href="products.html#table"  Table
+            li
+              a href="cooker.html"  Cooker
+      li
+        a href="about.html"  About
+      li
+        = link_to 'Sign Out', destroy_user_session_path, method: :delete
+-else
+  header.header
+    h1
+      = link_to 'Home', root_path, class: "btn btn-warning text-white"
+    ul.nav
+      li
+        = link_to 'Sign Up', new_user_registration_path
+      li
+        = link_to 'Sign In', new_user_session_path
