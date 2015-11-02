@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-  get 'home/about'
-
   devise_for :users
-  get 'home/index'
+  get 'dash', to: 'home#dash', as: 'dash'
+  get 'about', to: 'home#about', as: 'about'
   root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

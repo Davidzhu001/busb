@@ -1,8 +1,7 @@
-.container{
-
-  padding-top: 120px;
-}
 /* Main marketing message and sign up button */
+.container {
+  padding-top: 5%;
+}
 .jumbotron {
   width: 70%;
   position: inherit;
@@ -34,6 +33,7 @@
     filter:alpha(Opacity=100);-moz-opacity:0.7;opacity: 0.9;
 }
 nav {
+  z-index: 100;
   background-color: #fff;
   filter:alpha(Opacity=100);-moz-opacity:0.7;opacity: 0.9;
   border: 1px solid #dedede;
@@ -48,6 +48,7 @@ nav {
   nav ul {
     margin: 0;
     padding: 0;
+    padding-right: 0;
 
   }
 
@@ -109,7 +110,6 @@ nav {
         position: absolute;
         width: 165px;
       	visibility: hidden;
-      	    z-index: -1;
 
         -webkit-transiton: opacity 0.2s;
         -moz-transition: opacity 0.2s;

@@ -2,12 +2,12 @@
   nav.pull-right
     ul
       li
-        a href="home.html"  Home
+        = link_to 'Sign Out', destroy_user_session_path, method: :delete
       li
-        a href="products.html"
+        a href="/"
           | Products
           span.caret
-        div
+        div id="divOnTop"
           ul
             li
               a href="products.html#chair"  Chair
@@ -16,7 +16,7 @@
             li
               a href="cooker.html"  Cooker
       li
-        a href="about.html"  About
+        = link_to 'About', about_path
       li
         = link_to 'Sign Out', destroy_user_session_path, method: :delete
 -else
@@ -28,3 +28,4 @@
         = link_to 'Sign Up', new_user_registration_path
       li
         = link_to 'Sign In', new_user_session_path
+  background-image
