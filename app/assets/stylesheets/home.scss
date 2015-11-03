@@ -1,6 +1,13 @@
 /* Main marketing message and sign up button */
 .container {
-  padding-top: 5%;
+  padding-top: 2%;
+}
+
+.segment {
+  margin-left: auto ;
+  margin-right: auto ;
+  position: inherit;
+  filter:alpha(Opacity=100);-moz-opacity:0.8;opacity: 0.9.4;
 }
 .jumbotron {
   width: 70%;
@@ -32,6 +39,13 @@
     background: #eee;
     filter:alpha(Opacity=100);-moz-opacity:0.7;opacity: 0.9;
 }
+.navagation {
+  justify-content: space-between;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
 nav {
   z-index: 100;
   background-color: #fff;
@@ -50,6 +64,9 @@ nav {
     padding: 0;
     padding-right: 0;
 
+  }
+  nav logo {
+    font-size: 5.5rem;
   }
 
     nav ul li {
