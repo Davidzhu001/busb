@@ -6,8 +6,14 @@ html
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
-  body
 
-    = render "layouts/header"
-    .container
-      = yield
+    -if user_signed_in?
+      body
+        = render "layouts/header"
+        .container
+          = yield
+    -else
+      body.background
+        = render "layouts/header2"
+        .container
+          = yield

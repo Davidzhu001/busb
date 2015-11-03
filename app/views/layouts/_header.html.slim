@@ -1,32 +1,21 @@
--if user_signed_in?
-  .navagation
-    nav
-      ul
-        li
-          = link_to 'Dash', dash_path, :class => "text-warning"
-        li
-          a href="/"
-            | Products
-            span.caret
-          div id="divOnTop"
-            ul
-              li
-                a href="products.html#chair"  Chair
-              li
-                a href="products.html#table"  Table
-              li
-                a href="cooker.html"  Cooker
-        li
-          = link_to 'About', about_path
-        li
-          = link_to 'Sign Out', destroy_user_session_path, method: :delete
--else
-  header.header
-    h1
-      = link_to 'Mazi Hub', root_path, class: "text-white verdana", face:"verdana"
-    ul.nav
+.navagation
+  nav
+    ul
       li
-        = link_to 'Sign Up', new_user_registration_path
+        = link_to 'Mazi Hub', dash_path, :class => "text-success", :size => "26"
       li
-        = link_to 'Sign In', new_user_session_path
-  background-image
+        a href="/"
+          | Products
+          span.caret
+        div id="divOnTop"
+          ul
+            li
+              a href="products.html#chair"  Chair
+            li
+              a href="products.html#table"  Table
+            li
+              a href="cooker.html"  Cooker
+      li
+        = link_to 'About', about_path
+      li
+        = link_to 'Sign Out', destroy_user_session_path, method: :delete
