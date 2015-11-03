@@ -36,7 +36,7 @@ gem 'html2slim'
 gem 'simple_form'
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 
-
+gem 'pg'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -44,6 +44,10 @@ gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'capistrano', '~> 3.4.0'
+  gem 'capistrano-rails', '~> 1.1.3'
+  gem 'capistrano-rbenv', '~> 2.0.3'
+  gem 'capistrano-passenger'
 end
 
 group :development do
